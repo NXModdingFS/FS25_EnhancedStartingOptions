@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUIProfiles>
+
+    <!-- Custom blue "Save as Defaults" button -->
+    <Profile name="eso_buttonSaveDefaults" extends="buttonYes">
+        <color value="0.2 0.5 0.9 1"/>
+        <colorFocused value="0.35 0.65 1 1"/>
+        <colorPressed value="0.15 0.4 0.75 1"/>
+    </Profile>
+
+</GUIProfiles>

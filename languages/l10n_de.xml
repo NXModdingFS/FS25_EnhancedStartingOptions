@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<texts>
+    <!-- Abschnittsüberschriften -->
+    <text name="eso_section_time"     text="— Zeiteinstellungen —"/>
+    <text name="eso_section_rules"    text="— Spielregeln —"/>
+    <text name="eso_section_workers"  text="— Helfereinstellungen —"/>
+    <text name="eso_section_economy"  text="— Wirtschaft —"/>
+    <text name="eso_section_misc"     text="— Sonstige Einstellungen —"/>
+
+    <!-- Zeilenbeschriftungen: Zeit -->
+    <text name="eso_starting_month"  text="Startmonat"/>
+    <text name="eso_days_per_period" text="Tage pro Periode"/>
+    <text name="eso_starting_day"    text="Starttag"/>
+    <text name="eso_starting_hour"   text="Startuhrzeit"/>
+
+    <!-- Zeilenbeschriftungen: Spielregeln -->
+    <text name="eso_plowing" text="Periodisches Pflügen"/>
+    <text name="eso_weeds"   text="Unkraut"/>
+    <text name="eso_lime"    text="Kalkbedarf"/>
+
+    <!-- Zeilenbeschriftungen: Helfereinstellungen -->
+    <text name="eso_helper_fuel"       text="Helfer tankt Kraftstoff"/>
+    <text name="eso_helper_seeds"      text="Helfer kauft Saatgut"/>
+    <text name="eso_helper_fertilizer" text="Helfer kauft Dünger"/>
+    <text name="eso_helper_slurry"     text="Helfer Güllequelle"/>
+    <text name="eso_helper_manure"     text="Helfer Mistquelle"/>
+
+    <!-- Zeilenbeschriftungen: Wirtschaft -->
+    <text name="eso_economic_difficulty" text="Wirtschaftsschwierigkeit"/>
+    <text name="eso_currency"            text="Währung"/>
+
+    <!-- Schwierigkeitswerte -->
+    <text name="eso_difficulty_easy"   text="Einfach"/>
+    <text name="eso_difficulty_normal" text="Normal"/>
+    <text name="eso_difficulty_hard"   text="Schwer"/>
+
+    <!-- Zeilenbeschriftungen: Sonstige Einstellungen -->
+    <text name="eso_auto_motor"        text="Automatischer Motorstart"/>
+    <text name="eso_fruit_destruction" text="Fruchtbeschädigung"/>
+    <text name="eso_time_scale"        text="Zeitskala"/>
+
+    <!-- Schalterwerte -->
+    <text name="eso_on"  text="Ein"/>
+    <text name="eso_off" text="Aus"/>
+    <text name="eso_buy" text="Kaufen"/>
+
+    <!-- Schaltflächen -->
+    <text name="eso_confirm"       text="Bestätigen"/>
+    <text name="eso_save_defaults" text="Als Standard speichern"/>
+    <text name="button_back"       text="Zurück"/>
+
+    <!-- Bestätigungsdialog "Als Standard speichern" -->
+    <text name="eso_save_defaults_confirm" text="Aktuelle Einstellungen als Standardprofil speichern? Dies überschreibt Ihre vorhandenen Standardeinstellungen."/>
+    <text name="eso_save_defaults_done"    text="Standardprofil erfolgreich gespeichert."/>
+
+    <!-- Monatsnamen (FS25 Periodenreihenfolge: März zuerst) -->
+    <text name="eso_month_march"     text="März"/>
+    <text name="eso_month_april"     text="April"/>
+    <text name="eso_month_may"       text="Mai"/>
+    <text name="eso_month_june"      text="Juni"/>
+    <text name="eso_month_july"      text="Juli"/>
+    <text name="eso_month_august"    text="August"/>
+    <text name="eso_month_september" text="September"/>
+    <text name="eso_month_october"   text="Oktober"/>
+    <text name="eso_month_november"  text="November"/>
+    <text name="eso_month_december"  text="Dezember"/>
+    <text name="eso_month_january"   text="Januar"/>
+    <text name="eso_month_february"  text="Februar"/>
+
+    <!-- Benachrichtigung nach Auswahl -->
+    <text name="eso_info_spring_reset"
+          text="Das Spiel beginnt im %s. Alle Felder wurden auf kultiviert zurückgesetzt."/>
+</texts>
+</l10n>

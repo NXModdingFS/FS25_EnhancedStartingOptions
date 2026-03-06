@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI name="ESOSelectorScreen" onOpen="onOpen" onClose="onClose">
+  <GuiElement profile="newLayer"/>
+  <Bitmap profile="dialogFullscreenBg" id="dialogBg"/>
+
+  <!-- Size set directly on the element, matching ProductionDlgFrame pattern.
+       This ensures ThreePartBitmaps inherit the correct width and render flush. -->
+  <GuiElement profile="fs25_dialogBg" id="dialogElement" size="1600px 800px" horizontalAlignment="center" verticalAlignment="middle">
+    <ThreePartBitmap profile="fs25_dialogBgMiddle"/>
+    <ThreePartBitmap profile="fs25_dialogBgTop"/>
+    <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+
+    <GuiElement profile="fs25_dialogContentContainer" id="contentRoot">
+    
+      <ScrollingLayout profile="fs25_settingsLayout" id="optionsLayout"
+                       topClipperElementName="topClipper"
+                       bottomClipperElementName="bottomClipper">
+
+        <!-- TIME SETTINGS -->
+        <Text profile="fs25_settingsSectionHeader" text="$l10n_eso_section_time" position="0px 4px" fontSize="14px"/>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_starting_month"/>
+          <MultiTextOption id="optionMonth" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="1"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_days_per_period"/>
+          <MultiTextOption id="optionDaysPerMonth" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" onClick="onClickDaysPerMonth" focusId="2"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_starting_day"/>
+          <MultiTextOption id="optionStartDay" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="3"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_starting_hour"/>
+          <MultiTextOption id="optionStartHour" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="4"/>
+        </GuiElement>
+
+        <!-- GAME RULES -->
+        <Text profile="fs25_settingsSectionHeader" text="$l10n_eso_section_rules" position="0px 4px" fontSize="14px"/>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_plowing"/>
+          <MultiTextOption id="optionPlowing" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="5"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_weeds"/>
+          <MultiTextOption id="optionWeeds" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="6"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_lime"/>
+          <MultiTextOption id="optionLime" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="7"/>
+        </GuiElement>
+
+        <!-- WORKER SETTINGS -->
+        <Text profile="fs25_settingsSectionHeader" text="$l10n_eso_section_workers" position="0px 4px" fontSize="14px"/>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_helper_fuel"/>
+          <MultiTextOption id="optionHelperFuel" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="8"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_helper_seeds"/>
+          <MultiTextOption id="optionHelperSeeds" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="9"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_helper_fertilizer"/>
+          <MultiTextOption id="optionHelperFertilizer" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="10"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_helper_slurry"/>
+          <MultiTextOption id="optionHelperSlurry" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="11"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_helper_manure"/>
+          <MultiTextOption id="optionHelperManure" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="12"/>
+        </GuiElement>
+
+        <!-- ECONOMY -->
+        <Text profile="fs25_settingsSectionHeader" text="$l10n_eso_section_economy" position="0px 4px" fontSize="14px"/>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_economic_difficulty"/>
+          <MultiTextOption id="optionEconomicDifficulty" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="13"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_currency"/>
+          <MultiTextOption id="optionCurrency" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="14"/>
+        </GuiElement>
+
+        <!-- MISC -->
+        <Text profile="fs25_settingsSectionHeader" text="$l10n_eso_section_misc" position="0px 4px" fontSize="14px"/>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_auto_motor"/>
+          <MultiTextOption id="optionAutoMotor" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="15"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.18"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_fruit_destruction"/>
+          <MultiTextOption id="optionFruitDestruction" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="16"/>
+        </GuiElement>
+
+        <GuiElement size="700px 52px" horizontalAlignment="center">
+          <Bitmap size="700px 50px" color="0 0 0 0.25"/>
+          <Text profile="fs25_settingsMultiTextOptionTitle" position="20px 14px" text="$l10n_eso_time_scale"/>
+          <MultiTextOption id="optionTimeScale" position="260px 4px" size="380px 44px" profile="fs25_settingsMultiTextOption" focusId="17"/>
+        </GuiElement>
+
+      </ScrollingLayout>
+      <Bitmap profile="fs25_startClipper" name="topClipper"/>
+      <Bitmap profile="fs25_stopClipper"  name="bottomClipper"/>
+
+      <!-- Scrollbar linked to the ScrollingLayout -->
+      <ThreePartBitmap profile="fs25_listSliderBox" position="-35px -65px" size="8px 480px" with="anchorTopRight">
+        <Slider profile="fs25_listSlider" size="4px 472px" dataElementId="optionsLayout" id="optionsSlider"/>
+      </ThreePartBitmap>
+    </GuiElement>
+
+    <BoxLayout profile="fs25_dialogButtonBox" id="eso_buttonsPanel">
+      <Button profile="buttonYes" id="confirmButton" text="$l10n_eso_confirm" onClick="onClickConfirm" focusId="18"/>
+      <Bitmap profile="fs25_dialogButtonBoxSeparator"/>
+      <Button profile="eso_buttonSaveDefaults" id="saveDefaultsButton" text="$l10n_eso_save_defaults" onClick="onClickSaveDefaults" focusId="20"/>
+      <Bitmap profile="fs25_dialogButtonBoxSeparator"/>
+      <Button profile="buttonNo" id="backButton" text="$l10n_button_back" onClick="onClickBack" focusId="19"/>
+    </BoxLayout>
+  </GuiElement>
+
+</GUI>

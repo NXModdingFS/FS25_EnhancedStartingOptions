@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="106">
+    <author>NX Modding</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Enhanced Starting Options</en>
+        <de>Erweiterte Startoptionen</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[Monthly Planner for FS25
+
+On the first load of a new singleplayer career, this mod shows a screen that lets you choose which month your farm starts in.
+
+The selection screen appears automatically a few seconds after the map has loaded. Simply use the arrow toggles to pick your month and press Confirm.
+
+If you do not make a selection within 2 minutes the game will default to March (Spring).
+
+This mod has no effect on existing saves or multiplayer sessions.
+]]>
+        </en>
+        <de>
+<![CDATA[Monatsplaner für FS25
+
+Beim ersten Laden einer neuen Einzelspieler-Karriere zeigt dieser Mod einen Bildschirm, auf dem Sie auswählen können, in welchem Monat Ihre Farm beginnt.
+
+Der Auswahlbildschirm erscheint automatisch einige Sekunden nach dem Laden der Karte. Verwenden Sie einfach die Pfeil-Schalter, um Ihren Monat auszuwählen, und drücken Sie Bestätigen.
+
+Wenn Sie innerhalb von 2 Minuten keine Auswahl treffen, verwendet das Spiel standardmäßig März.
+
+Dieser Mod hat keinen Einfluss auf bestehende Speicherstände oder Mehrspieler-Sitzungen.
+]]>
+        </de>
+    </description>
+
+    <iconFilename>icon_EnhancedStartingOptions.dds</iconFilename>
+    <multiplayer supported="false"/>
+
+    <l10n filenamePrefix="languages/l10n"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/EnhancedStartingOptions.lua"/>
+        <sourceFile filename="scripts/ESOSelectorScreen.lua"/>
+    </extraSourceFiles>
+</modDesc>

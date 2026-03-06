@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+<texts>
+
+    <!-- Section headers -->
+    <text name="eso_section_time"     text="— Time Settings —"/>
+    <text name="eso_section_rules"    text="— Game Rules —"/>
+    <text name="eso_section_workers"  text="— Worker Settings —"/>
+    <text name="eso_section_economy"  text="— Economy —"/>
+    <text name="eso_section_misc"     text="— Misc Settings —"/>
+
+    <!-- Row labels: time -->
+    <text name="eso_starting_month"  text="Starting Month"/>
+    <text name="eso_days_per_period" text="Days Per Period"/>
+    <text name="eso_starting_day"    text="Starting Day"/>
+    <text name="eso_starting_hour"   text="Starting Hour"/>
+
+    <!-- Row labels: game rules -->
+    <text name="eso_plowing" text="Periodic Plowing"/>
+    <text name="eso_weeds"   text="Weeds"/>
+    <text name="eso_lime"    text="Lime Requirement"/>
+
+    <!-- Row labels: worker settings -->
+    <text name="eso_helper_fuel"       text="Helper Refill Fuel"/>
+    <text name="eso_helper_seeds"      text="Helper Refill Seeds"/>
+    <text name="eso_helper_fertilizer" text="Helper Refill Fertilizer"/>
+    <text name="eso_helper_slurry"     text="Helper Slurry Source"/>
+    <text name="eso_helper_manure"     text="Helper Manure Source"/>
+
+    <!-- Row labels: economy -->
+    <text name="eso_economic_difficulty" text="Economic Difficulty"/>
+    <text name="eso_currency"            text="Currency"/>
+
+    <!-- Economic difficulty values -->
+    <text name="eso_difficulty_easy"   text="Easy"/>
+    <text name="eso_difficulty_normal" text="Normal"/>
+    <text name="eso_difficulty_hard"   text="Hard"/>
+
+    <!-- Row labels: misc settings -->
+    <text name="eso_auto_motor"        text="Automatic Motor Start"/>
+    <text name="eso_fruit_destruction" text="Fruit Destruction"/>
+    <text name="eso_time_scale"        text="Time Scale"/>
+
+    <!-- Toggle values -->
+    <text name="eso_on"  text="On"/>
+    <text name="eso_off" text="Off"/>
+    <text name="eso_buy" text="Buy"/>
+
+    <!-- Buttons -->
+    <text name="eso_confirm"       text="Confirm"/>
+    <text name="eso_save_defaults" text="Save As Defaults"/>
+    <text name="button_back"       text="Back"/>
+
+    <!-- Save As Defaults confirmation dialog -->
+    <text name="eso_save_defaults_confirm" text="Save current settings as your default profile? This will overwrite your existing defaults."/>
+    <text name="eso_save_defaults_done"    text="Default profile saved successfully."/>
+
+    <!-- Month names (FS25 period order: March first) -->
+    <text name="eso_month_march"     text="March"/>
+    <text name="eso_month_april"     text="April"/>
+    <text name="eso_month_may"       text="May"/>
+    <text name="eso_month_june"      text="June"/>
+    <text name="eso_month_july"      text="July"/>
+    <text name="eso_month_august"    text="August"/>
+    <text name="eso_month_september" text="September"/>
+    <text name="eso_month_october"   text="October"/>
+    <text name="eso_month_november"  text="November"/>
+    <text name="eso_month_december"  text="December"/>
+    <text name="eso_month_january"   text="January"/>
+    <text name="eso_month_february"  text="February"/>
+
+    <!-- Post-selection notification -->
+    <text name="eso_info_spring_reset"
+          text="Game starts in %s. All fields have been set accoringly."/>
+</texts>
+</l10n>
